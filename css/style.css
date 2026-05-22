@@ -2,6 +2,15 @@
   --bg-color: #ffffff;
   --text-color: #333333;
   --link-color: #5c6bc0;
+
+  /* AI 챗봇 스타일 설정 */
+  --chat--window--width: 600px;
+  --chat--window--height: 800px;
+  --chat--toggle--size: 70px;
+  --chat--message--font-size: 16px;
+  --chat--header--height: 60px;
+  --chat--textarea--height: 60px;
+  --chat--input--font-size: 15px;
 }
 
 [data-theme="dark"] {

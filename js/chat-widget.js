@@ -1,4 +1,4 @@
-﻿// Chat Widget Script
+// Chat Widget Script
 (function() {
     // Create and inject styles
     const styles = `
@@ -338,9 +338,9 @@
     
     const newConversationHTML = `
         <div class="brand-header">
-            <img src="${config.branding.logo}" alt="${config.branding.name}">
+            ${config.branding.logo ? `<img src="${config.branding.logo}" alt="${config.branding.name}">` : ''}
             <span>${config.branding.name}</span>
-            <button class="close-button">횞</button>
+            <button class="close-button">×</button>
         </div>
         <div class="new-conversation">
             <h2 class="welcome-text">${config.branding.welcomeText}</h2>
@@ -357,9 +357,9 @@
     const chatInterfaceHTML = `
         <div class="chat-interface">
             <div class="brand-header">
-                <img src="${config.branding.logo}" alt="${config.branding.name}">
+                ${config.branding.logo ? `<img src="${config.branding.logo}" alt="${config.branding.name}">` : ''}
                 <span>${config.branding.name}</span>
-                <button class="close-button">횞</button>
+                <button class="close-button">×</button>
             </div>
             <div class="chat-messages"></div>
             <div class="chat-input">

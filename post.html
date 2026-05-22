@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only My Journey</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Only My Journey</a></h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+  <main>
+    <article id="post-content"></article>
+    <div id="giscus-container"></div>
+  </main>
+  <footer>
+    <p>&copy; 2026 Only My Journey</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+
+  <!-- ===== 포트폴리오 AI 챗봇 ===== -->
+  <script>
+    window.ChatWidgetConfig = {
+      webhook: {
+        url: 'https://myjourney2323.app.n8n.cloud/webhook/chat'
+      },
+      branding: {
+        name: 'With Journey',
+        welcomeText: '안녕하세요. Journy 입니다.',
+        responseTimeText: '잠시 후 답변드릴게요'
+      },
+      style: {
+        primaryColor: '#5c6bc0',
+        position: 'right'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/juansebsol/n8n-chatbot-template@latest/chat-widget.js"></script>
+</body>
+</html>
